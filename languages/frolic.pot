@@ -766,6 +766,22 @@ msgstr ""
 msgid "No Related Posts Yet!"
 msgstr ""
 
+#: includes/template-tags.php:433
+msgid "No Comments"
+msgstr ""
+
+#: includes/template-tags.php:435
+msgid " Comments"
+msgstr ""
+
+#: includes/template-tags.php:437
+msgid "1 Comment"
+msgstr ""
+
+#: includes/template-tags.php:441
+msgid "Leave a comment"
+msgstr ""
+
 #: includes/template-tags.php:469
 msgid "ReadMore"
 msgstr ""

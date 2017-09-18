@@ -461,10 +461,10 @@ textarea {
   line-height: 1.7; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #3c3838;
   clear: both;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 15px;
   text-transform: capitalize; }
 
@@ -609,7 +609,7 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
   table th {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Roboto Slab", serif; }
     table th a {
       font-weight: 700;
       display: block;
@@ -1012,7 +1012,7 @@ a {
     position: relative;
     font-size: 18px;
     font-size: 1.8rem;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Roboto Slab", serif; }
   .nav-links .meta-nav,
   .more-link .meta-nav, .comment-navigation .meta-nav {
     width: 20px;
@@ -2721,7 +2721,7 @@ blockquote {
 
 .widget-area .widget_rss a {
   color: #3c3838;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Roboto Slab", serif; }
   .widget-area .widget_rss a:hover {
     color: #0db496; }
 
@@ -2931,7 +2931,7 @@ blockquote {
     padding: 0;
     display: inline; }
   .site-info .widget_nav_menu a {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto Slab", serif;
     display: inline-block;
     color: #fff;
     padding: 4px 10px;

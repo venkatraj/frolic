@@ -13,7 +13,7 @@ Frolic WordPress Theme, Copyright (C) 2017, V. Uma Rani
 Frolic is distributed under the terms of the GNU GPL
 
 Frolic WordPress Theme is derived from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
+ 
 == Description == 
  Frolic is a Free Sports WordPress theme perfect for Sports related webites and Gym, Yoga, Fitness, health, wellness spa, massage center, weight loss, hospital, clinic,restaurants,cafe, physiotherapy, portfolio, photography and more business. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly.
 

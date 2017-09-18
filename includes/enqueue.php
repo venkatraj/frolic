@@ -3,9 +3,9 @@
 /**
  * Enqueue scripts and styles.  
  */
-function frolic_scripts() {       
+function frolic_scripts() {        
 	wp_enqueue_style( 'frolic-lato', frolic_theme_font_url('Lato:300,400,700,900'), array(), 20141212 );
-	wp_enqueue_style( 'frolic-montserrat', frolic_theme_font_url('Montserrat:300,400,500,600,700,800,900'), array(), 20141212 );
+	wp_enqueue_style( 'frolic-roboto-slab', frolic_theme_font_url('Roboto Slab:300,400,700'), array(), 20141212 );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), 20150224 );
 	wp_enqueue_style( 'jquery-flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), 20150224 );
 	wp_enqueue_style( 'frolic-style', get_template_directory_uri() . '/style.css');

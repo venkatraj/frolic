@@ -132,7 +132,7 @@ if( ! function_exists('frolic_top_meta') ) {
 
 // Recent Posts with featured Images to be displayed on home page
 if( ! function_exists('frolic_recent_posts') ) {
-	function frolic_recent_posts() {      
+	function frolic_recent_posts() {       
 		$output = '';
 		$posts_per_page  = get_theme_mod('recent_posts_count', 4 );
 		// WP_Query arguments
