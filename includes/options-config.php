@@ -159,7 +159,7 @@ function frolic_display_upgrade() {
         $tab = null;
     } 
      
-    $pro_theme_url = 'http://genexthemes.com/downloads/frolicpro/';
+    $pro_theme_url = 'http://genexthemes.com/downloads/frolic-pro/';
     $doc_url  = 'https://genexthemes.com/docs/free/frolic/';
     $support_url = 'https://genexthemes.com/free-support-request/';   
     
@@ -229,9 +229,9 @@ function frolic_display_upgrade() {
 	                <table class="free-pro-table">
 		                <thead>
 			                <tr>
-			                    <th></th>
-			                    <th><?php echo $theme_data->Name; ?> Lite</th>
-			                    <th><?php echo $theme_data->Name; ?> PRO</th>
+			                    <th></th>  
+			                    <th><?php echo esc_html($theme_data->Name); ?> Lite</th>
+			                    <th><?php echo esc_html($theme_data->Name); ?> PRO</th>
 			                </tr>
 		                </thead>
 		                <tbody>

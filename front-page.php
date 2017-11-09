@@ -56,12 +56,12 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
     endif;  
 
     if( get_theme_mod('service_field',true) ) {
-       do_action('service_content_before');
+       do_action('frolic_service_content_before');
       
-		$service_page1 = get_theme_mod('service_1');
-		$service_page2 = get_theme_mod('service_2');
-		$service_page3 = get_theme_mod('service_3');
-		$service_page4 = get_theme_mod('service_4');
+		$service_page1 = intval(get_theme_mod('service_1'));
+		$service_page2 = intval(get_theme_mod('service_2'));
+		$service_page3 = intval(get_theme_mod('service_3'));
+		$service_page4 = intval(get_theme_mod('service_4'));
 		$service_section_icon_1 = get_theme_mod('service_section_icon_1');
 		$service_section_icon_2 = get_theme_mod('service_section_icon_2');
 		$service_section_icon_3 = get_theme_mod('service_section_icon_3');
@@ -76,7 +76,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 						'post_type' => 'page',
 						'post__in' => $service_pages,
 						'posts_per_page' => 4,
-						'orderby' => 'post__in'
+						'orderby' => 'post__in' 
 					);
 					$query = new WP_Query($args);
 					if( $query->have_posts()) : 
@@ -97,7 +97,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 
 								    <div class="service-section">
 								    	<?php if($icon_url): ?>
-						    	           <div class="service-image"><a href="<?php echo esc_url( get_permalink() ); ?>"><i class="fa <?php echo $icon_url; ?>"></i></a></div><?php 
+						    	           <div class="service-image"><a href="<?php echo esc_url( get_permalink() ); ?>"><i class="fa <?php echo esc_attr($icon_url); ?>"></i></a></div><?php 
 						    	        elseif( has_post_thumbnail() ) : ?>
 								    		 <div class="service-image"><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail('frolic-service-img'); ?></a></div>
 								    	<?php endif; ?>
@@ -123,7 +123,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		} 	
 
 		
-		do_action('service_content_after'); 
+		do_action('frolic_service_content_after'); 
 
 	}	
         if( get_theme_mod('enable_recent_post_service',true) ) :

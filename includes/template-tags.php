@@ -164,13 +164,6 @@ if( ! function_exists('frolic_recent_posts') ) {
 						}		
 						$output .= '<div class="latest-post-content-wrapper">';
 							$output .= '<h4><a href="'. esc_url(get_permalink()) . '">' . get_the_title() . '</a></h4>';
-							/* $output .= '<div class="latest-post-content">' . get_the_content() . '</div>';
-							$output .= wp_link_pages( array(
-								'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'frolic' ),
-								'after'  => '</div>',
-								'echo' => false,
-							) );
-							$output .= '</div><!-- .latest-post-content -->'; */
 							$output .='<div class="entry-meta">';
 								 $output .='<span class="data-structure"><span class="dd"><a class="url fn n" href="'. get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')).'">' . get_the_time('j M, Y').'</a></span></span>';
 							     $output .= frolic_get_comments_meta();  

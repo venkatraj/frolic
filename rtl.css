@@ -791,8 +791,7 @@ a {
     color: #fff;
     text-transform: capitalize;
     padding: 40px 20px;
-    position: relative;
-    font-weight: 500; }
+    position: relative; }
   .main-navigation li.menu-item-has-children > a:after {
     position: absolute;
     content: '\f0d7';
@@ -2488,8 +2487,7 @@ blockquote {
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
-    text-transform: uppercase;
-    font-weight: 500; }
+    text-transform: uppercase; }
   .widget-area aside > ul {
     margin-top: -10px !important; }
   .widget-area ul:nth-of-type(1) {
@@ -2750,8 +2748,7 @@ blockquote {
     color: #bcbcbc; }
     .site-footer .footer-widgets h4.widget-title {
       color: #fff;
-      text-transform: uppercase;
-      font-weight: 500; }
+      text-transform: uppercase; }
     .site-footer .footer-widgets .alpha, .site-footer .footer-widgets .alpha aside {
       margin-right: 0; }
     .site-footer .footer-widgets .omega, .site-footer .footer-widgets .omega aside {

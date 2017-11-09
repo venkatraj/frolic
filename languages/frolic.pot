@@ -709,88 +709,88 @@ msgstr ""
 msgid "Blog Updates"
 msgstr ""
 
-#: includes/template-tags.php:202
+#: includes/template-tags.php:195
 msgid "<i class=\"fa fa-home\"></i>"
 msgstr ""
 
-#: includes/template-tags.php:203
+#: includes/template-tags.php:196
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:204
+#: includes/template-tags.php:197
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:205
+#: includes/template-tags.php:198
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:206
+#: includes/template-tags.php:199
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:207
+#: includes/template-tags.php:200
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:260, includes/template-tags.php:260, includes/template-tags.php:261, includes/template-tags.php:265, includes/template-tags.php:265, includes/template-tags.php:269
+#: includes/template-tags.php:253, includes/template-tags.php:253, includes/template-tags.php:254, includes/template-tags.php:258, includes/template-tags.php:258, includes/template-tags.php:262
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:261
+#: includes/template-tags.php:254
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:261, includes/template-tags.php:266
+#: includes/template-tags.php:254, includes/template-tags.php:259
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:262
+#: includes/template-tags.php:255
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:332
+#: includes/template-tags.php:325
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:353
+#: includes/template-tags.php:346
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:363, template-parts/content-page.php:29
+#: includes/template-tags.php:356, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:410, includes/template-tags.php:413
+#: includes/template-tags.php:403, includes/template-tags.php:406
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:433
+#: includes/template-tags.php:426
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:435
+#: includes/template-tags.php:428
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:437
+#: includes/template-tags.php:430
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:441
+#: includes/template-tags.php:434
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:469
+#: includes/template-tags.php:462
 msgid "ReadMore"
 msgstr ""
 
-#: includes/template-tags.php:505
+#: includes/template-tags.php:498
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:506
+#: includes/template-tags.php:499
 msgid "Get started with Frolic"
 msgstr ""
 
