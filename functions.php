@@ -86,7 +86,7 @@ function frolic_setup() {
 	 */  
 	add_image_size( 'frolic-small-featured-image-width', 450,300, true );
 	add_image_size( 'frolic-blog-large-width', 800,300, true );
-
+	add_image_size( 'frolic-recent-work', 220, 220, true );
 	add_image_size( 'frolic-service-img', 50,50, true );
 	add_image_size( 'frolic-recent-posts-img', 280,230, true );
 	
@@ -270,6 +270,11 @@ require get_template_directory() . '/includes/jetpack.php';
  */
 require get_template_directory() . '/includes/theme-options.php';
 
+/**  
+ * Load TGM plugin 
+ */
+require get_template_directory() . '/admin/class-tgm-plugin-activation.php';
+
 /* Woocommerce support */
 
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper');
@@ -286,7 +291,138 @@ function frolic_output_content_wrapper_end () {
 	echo "</div>";
 }
 
-add_action( 'wp_head', 'frolic_remove_wc_breadcrumbs' );
+add_action( 'init', 'frolic_remove_wc_breadcrumbs' );
 function frolic_remove_wc_breadcrumbs() {
    	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }  
+
+/* Demo importer */
+add_filter( 'pt-ocdi/import_files', 'frolic_import_demo_data' );
+if ( ! function_exists( 'frolic_import_demo_data' ) ) {
+	function frolic_import_demo_data() {
+	  return array(
+	    array(   
+	      'import_file_name'             => __('Demo Import','frolic'),
+	      'categories'                   => array( 'Category 1', 'Category 2' ),
+	      'local_import_file'            => trailingslashit( get_template_directory() ) . 'demo/demo-content.xml',
+	      'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'demo/widgets.json',
+	      'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'demo/customizer.dat',
+	    ),
+	  ); 
+	}
+}
+
+add_action( 'pt-ocdi/after_import', 'frolic_after_import' );
+if ( ! function_exists( 'frolic_after_import' ) ) {
+	function frolic_after_import( $selected_import ) { 
+		$importer_name  = __('Demo Import','frolic');
+	 
+	    if ( $importer_name === $selected_import['import_file_name'] ) {
+	        //Set Menu
+	        $top_menu = get_term_by('name', 'Primary Menu', 'nav_menu'); 
+	        set_theme_mod( 'nav_menu_locations' , array( 
+	              'primary' => $top_menu->term_id,
+	             ) 
+	        );
+
+		    //Set Front page
+		    if( get_option('page_on_front') === '0' && get_option('page_for_posts') === '0' ) {
+			   $page = get_page_by_title( 'Home');
+			   $blog = get_page_by_title( 'Blog');
+			   if ( isset( $page->ID ) ) {
+			   	    update_option( 'show_on_front', 'page' );
+				    update_option( 'page_on_front', $page->ID );
+				    update_option('page_for_posts', $blog->ID);
+			   }
+		    }
+	    }
+	     
+	}
+}
+
+/* Check whether the One Click Import Plugin is installed or not */
+
+function frolic_is_plugin_installed($plugin_title)
+{
+    // get all the plugins
+    $installed_plugins = get_plugins();
+
+    foreach ($installed_plugins as $installed_plugin => $data) {
+
+        // check for the plugin title
+        if ($data['Title'] == $plugin_title) {
+
+            // return the plugin folder/file
+            return true;
+        }
+    }
+
+    return false;
+} 
+
+/* Recommended plugin using TGM */
+add_action( 'tgmpa_register', 'frolic_register_plugins');
+if( !function_exists('frolic_register_plugins') ) {
+	function frolic_register_plugins() {
+       /**
+		 * Array of plugin arrays. Required keys are name and slug.
+		 * If the source is NOT from the .org repo, then source is also required.
+		 */
+		$plugins = array(
+
+			array(
+				'name'     => 'One Click Demo Import', // The plugin name.
+				'slug'     => 'one-click-demo-import', // The plugin slug (typically the folder name).
+				'required' => false, // If false, the plugin is only 'recommended' instead of required.
+			),
+		);
+		/*
+		 * Array of configuration settings. Amend each line as needed.
+		 *
+		 * TGMPA will start providing localized text strings soon. If you already have translations of our standard
+		 * strings available, please help us make TGMPA even better by giving us access to these translations or by
+		 * sending in a pull-request with .po file(s) with the translations.
+		 *
+		 * Only uncomment the strings in the config array if you want to customize the strings.
+		 */
+		$config = array(
+			'id'           => 'tgmpa',
+			// Unique ID for hashing notices for multiple instances of TGMPA.
+			'default_path' => '',
+			// Default absolute path to bundled plugins.
+			'menu'         => 'tgmpa-install-plugins',
+			// Menu slug.
+			'parent_slug'  => 'themes.php',
+			// Parent menu slug.
+			'capability'   => 'edit_theme_options',
+			// Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+			'has_notices'  => true,
+			// Show admin notices or not.
+			'dismissable'  => true,
+			// If false, a user cannot dismiss the nag message.
+			'dismiss_msg'  => '',
+			// If 'dismissable' is false, this message will be output at top of nag.
+			'is_automatic' => false,
+			// Automatically activate plugins after installation or not.
+			'message'      => '',
+			// Message to output right before the plugins table.
+			'strings'      => array(
+				'notice_can_activate_recommended' => _n_noop(
+					/* translators: 1: plugin name(s). */
+					'Activate the following plugin to import demo content of this theme: %1$s.','frolic'
+				),
+				'notice_can_install_recommended'  => _n_noop(
+					/* translators: 1: plugin name(s). */
+					'To Make your site look like Theme ScreenShot, Install this Plugin: %1$s. Then Go to Dashboard > Appearance > Import Demo Data.',
+					'frolic'
+				),
+			),
+		);
+
+		tgmpa( $plugins, $config );
+	}
+}
+
+/* To Hide Branding message in One Click demo import*/
+
+add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );

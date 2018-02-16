@@ -1,9 +1,9 @@
 === Frolic ===
 Contributors: Genex
-Tags: e-commerce, blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
+Tags: e-commerce, blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.8.3
-Stable tag: 1.0.1
+Tested up to: 4.9.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,8 +15,8 @@ Frolic is distributed under the terms of the GNU GPL
 Frolic WordPress Theme is derived from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
  
 == Description == 
- Frolic is a Free Sports WordPress theme perfect for Sports related webites and Gym, Yoga, Fitness, health, wellness spa, massage center, weight loss, hospital, clinic,restaurants,cafe, physiotherapy, portfolio, photography and more business. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly.
-
+ Frolic is a Free Sports WordPress theme perfect for Sports related webites and Gym, Yoga, Fitness, health more business. However, due to its flexibility and easiness it can be used to create any types of sites. this Theme build in customizer it is very easy to use and user friendly.
+ 
 == Frequently Asked Questions == 
 = Installation =
 1. Download and unzip `frolic` theme
@@ -45,14 +45,16 @@ Select 'Blog' section
 Enable/Disable featured images visibility.
 
 == Changelog ==
+= 1.0.3 =
+* Demo Import added. 
 
-= 1.0.1 =
+= 1.0.2 =
 * Initial Release
 
 == Upgrade Notice ==
 
-=  1.0.1 =
-* Initial Release
+= 1.0.3 =
+* Demo Import added. 
 
 Frolic WordPress Theme bundles the following third-party resources:
 == Resources ==
@@ -61,6 +63,8 @@ Frolic WordPress Theme bundles the following third-party resources:
 * {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/woothemes/FlexSlider
 * {FontAwesome Icon Picker} © Licensed under the MIT License, https://github.com/mjolnic/fontawesome-iconpicker/blob/master/LICENSE
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
+* {TGM Plugin Activation} library is licensed under the GPL-2.0, https://github.com/TGMPA/TGM-Plugin-Activation/
+
 * Screenshot Images is licensed under CC0 Public Domain License.(http://pixabay.com/en/service/terms/)
 	https://pixabay.com/en/beach-boy-evening-excitement-fun-2178626/
     https://pixabay.com/en/people-woman-exercise-fitness-2592247/

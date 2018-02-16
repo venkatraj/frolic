@@ -280,16 +280,6 @@ if( ! function_exists('frolic_recent_posts') ) {
 				$post_type = get_post_type_object(get_post_type());
 				echo $before . $post_type->labels->singular_name . $after;
 
-			} elseif ( is_attachment() ) {
-				$parent = get_post($post->post_parent);
-				$cat = get_the_category($parent->ID); $cat = $cat[0];
-				$cats = get_category_parents($cat, TRUE, $delimiter);
-				$cats = str_replace('<a', $linkBefore . '<a' . $linkAttr, $cats);
-				$cats = str_replace('</a>', '</a>' . $linkAfter, $cats);
-				echo $cats;
-				printf($link, get_permalink($parent), $parent->post_title);
-				if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
-
 			} elseif ( is_page() && !$post->post_parent ) {
 				if ($showCurrent == 1) echo $before . get_the_title() . $after;
 
@@ -395,7 +385,7 @@ if ( ! function_exists( 'frolic_related_posts' ) ) :
 	        if($related_posts) {
 	        	foreach ($related_posts as $post) : setup_postdata($post); ?>
 		           	<li class="related_post">
-		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('recent-work'); ?></a>
+		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('frolic-recent-work'); ?></a>
 		           		<a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 		           	</li>
 		        <?php endforeach; }

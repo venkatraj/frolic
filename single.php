@@ -11,7 +11,7 @@ get_header(); ?>
 
         <?php   $sidebar_position = get_theme_mod( 'sidebar_position', 'right' ); 
 				 if( 'left' == $sidebar_position ) :
-					 get_sidebar('left'); 
+					 get_sidebar(); 
 				 endif;  ?>
 
     <div id="primary" class="content-area <?php frolic_layout_class(); ?>  columns">
@@ -46,13 +46,9 @@ get_header(); ?>
 			<?php endif;  ?>
 
 			<?php
-					if( get_theme_mod ('comments',true) ) :
-						// If comments are open or we have at least one comment, load up the comment template
-						if ( comments_open() || '0' != get_comments_number() ) :
-							comments_template();
-						endif;
-					endif;
-				?>
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif; ?>
 
 		<?php endwhile; // end of the loop. ?>
 

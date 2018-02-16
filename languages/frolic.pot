@@ -1,4 +1,4 @@
-# Copyright (C) 2017 frolic
+# Copyright (C) 2018 frolic
 # This file is distributed under the same license as the frolic package.
 msgid ""
 msgstr ""
@@ -28,7 +28,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:35, comments.php:52
+#: comments.php:35, comments.php:53
 msgid "Comment navigation"
 msgstr ""
 
@@ -36,35 +36,35 @@ msgstr ""
 msgid " Previous Comments"
 msgstr ""
 
-#: comments.php:37, comments.php:54
+#: comments.php:37, comments.php:55
 msgid "Next Comments"
 msgstr ""
 
-#: comments.php:53
+#: comments.php:54
 msgid "Previous Comments"
 msgstr ""
 
-#: comments.php:64
+#: comments.php:65
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:73
+#: comments.php:74
 msgid "Post Comments"
 msgstr ""
 
-#: comments.php:75
+#: comments.php:76
 msgid "Leave a Comment"
 msgstr ""
 
-#: comments.php:83
+#: comments.php:84
 msgid "Name"
 msgstr ""
 
-#: comments.php:88
+#: comments.php:89
 msgid "Email"
 msgstr ""
 
-#: comments.php:93
+#: comments.php:94
 msgid "Website"
 msgstr ""
 
@@ -140,6 +140,22 @@ msgstr ""
 msgid "Footer %d"
 msgstr ""
 
+#: functions.php:305, functions.php:318
+msgid "Demo Import"
+msgstr ""
+
+#: functions.php:410
+msgid "Activate the following plugin to import demo content of this theme: %1$s."
+msgid_plural "frolic"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:414
+msgid "To Make your site look like Theme ScreenShot, Install this Plugin: %1$s. Then Go to Dashboard > Appearance > Import Demo Data."
+msgid_plural "frolic"
+msgstr[0] ""
+msgstr[1] ""
+
 #: header.php:23
 msgid "Skip to content"
 msgstr ""
@@ -154,6 +170,384 @@ msgstr ""
 
 #: template-full-width.php:2
 msgid "Full Width Template"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:386, admin/class-tgm-plugin-activation.php:827, admin/class-tgm-plugin-activation.php:2533, admin/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:387, admin/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:388, admin/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:934, admin/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:1121, admin/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: admin/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: admin/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: admin/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: admin/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3509, admin/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3509, admin/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: admin/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: admin/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: admin/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: admin/control-icon-picker.php:42
@@ -189,7 +583,7 @@ msgstr ""
 msgid "Theme offers many different page layouts so you can quickly and easily create your pages with no hassle!"
 msgstr ""
 
-#: includes/options-config.php:6, includes/options-config.php:314
+#: includes/options-config.php:6, includes/options-config.php:330
 msgid "Unlimited Sidebar"
 msgstr ""
 
@@ -285,7 +679,7 @@ msgstr ""
 msgid "Want your users to stay in touch? No problem, Theme has Social Media icons all throughout the theme!"
 msgstr ""
 
-#: includes/options-config.php:30, includes/options-config.php:284
+#: includes/options-config.php:30, includes/options-config.php:300
 msgid "Google Map"
 msgstr ""
 
@@ -346,335 +740,355 @@ msgid "Buy %1s Pro - $39"
 msgstr ""
 
 #: includes/options-config.php:175
-msgid "PRO Features"
+msgid "Import Demo Data"
 msgstr ""
 
 #: includes/options-config.php:176
+msgid "PRO Features"
+msgstr ""
+
+#: includes/options-config.php:177
 msgid "Free VS PRO"
 msgstr ""
 
-#: includes/options-config.php:185
+#: includes/options-config.php:186
 msgid "Theme Customizer"
 msgstr ""
 
-#: includes/options-config.php:186
+#: includes/options-config.php:187
 msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
 msgstr ""
 
-#: includes/options-config.php:188
+#: includes/options-config.php:189
 msgid "Start Customize"
 msgstr ""
 
-#: includes/options-config.php:192
+#: includes/options-config.php:193
 msgid "Theme Documentation"
 msgstr ""
 
-#: includes/options-config.php:193
+#: includes/options-config.php:194
 msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
 msgstr ""
 
-#: includes/options-config.php:195
+#: includes/options-config.php:196
 msgid " Documentation"
 msgstr ""
 
-#: includes/options-config.php:200
+#: includes/options-config.php:201
 msgid "Having Trouble, Need Support?"
 msgstr ""
 
-#: includes/options-config.php:201
+#: includes/options-config.php:202
 msgid "Support for %s WordPress theme is conducted through Genex free support ticket system."
 msgstr ""
 
-#: includes/options-config.php:239
+#: includes/options-config.php:210
+msgid "Theme screenshot"
+msgstr ""
+
+#: includes/options-config.php:223
+msgid "Install required plugin to import the demo content."
+msgstr ""
+
+#: includes/options-config.php:223
+msgid "Begin Installing Plugin"
+msgstr ""
+
+#: includes/options-config.php:225
+msgid "Click here to install the demo"
+msgstr ""
+
+#: includes/options-config.php:227
+msgid "Kindly activate the Required plugin to Import the demo content."
+msgstr ""
+
+#: includes/options-config.php:227
+msgid "Begin Activating Plugin"
+msgstr ""
+
+#: includes/options-config.php:255
 msgid "Flex Slider"
 msgstr ""
 
-#: includes/options-config.php:244
+#: includes/options-config.php:260
 msgid "Support"
 msgstr ""
 
-#: includes/options-config.php:249
+#: includes/options-config.php:265
 msgid "Responsive Design"
 msgstr ""
 
-#: includes/options-config.php:254
+#: includes/options-config.php:270
 msgid "Custom Logo Option"
 msgstr ""
 
-#: includes/options-config.php:259
+#: includes/options-config.php:275
 msgid "Social Links"
 msgstr ""
 
-#: includes/options-config.php:264
+#: includes/options-config.php:280
 msgid "Unlimited color option"
 msgstr ""
 
-#: includes/options-config.php:269
+#: includes/options-config.php:285
 msgid "Elastic Slider"
 msgstr ""
 
-#: includes/options-config.php:274
+#: includes/options-config.php:290
 msgid "Page Builder Support"
 msgstr ""
 
-#: includes/options-config.php:279
+#: includes/options-config.php:295
 msgid "Page Templates"
 msgstr ""
 
-#: includes/options-config.php:289
+#: includes/options-config.php:305
 msgid "Demo Content"
 msgstr ""
 
-#: includes/options-config.php:294
+#: includes/options-config.php:310
 msgid "Polylang Compatible"
 msgstr ""
 
-#: includes/options-config.php:299
+#: includes/options-config.php:315
 msgid "Multiple Portfolio Layouts"
 msgstr ""
 
-#: includes/options-config.php:304
+#: includes/options-config.php:320
 msgid "Multiple Blog Layouts"
 msgstr ""
 
-#: includes/options-config.php:309
+#: includes/options-config.php:325
 msgid "Page Animation"
 msgstr ""
 
-#: includes/options-config.php:321
+#: includes/options-config.php:337
 msgid "Buy %1s Pro"
 msgstr ""
 
-#: includes/options-config.php:340, includes/options-config.php:341
+#: includes/options-config.php:356, includes/options-config.php:357
 msgid "Theme Options"
 msgstr ""
 
-#: includes/options-config.php:344
+#: includes/options-config.php:360
 msgid "General"
 msgstr ""
 
-#: includes/options-config.php:345
+#: includes/options-config.php:361
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: includes/options-config.php:349
+#: includes/options-config.php:365
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: includes/options-config.php:355
+#: includes/options-config.php:371
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: includes/options-config.php:366
+#: includes/options-config.php:382
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: includes/options-config.php:367
+#: includes/options-config.php:383
 msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
 msgstr ""
 
-#: includes/options-config.php:373
+#: includes/options-config.php:389
 msgid "Website Layout Options"
 msgstr ""
 
-#: includes/options-config.php:374
+#: includes/options-config.php:390
 msgid "Select main content and sidebar alignment."
 msgstr ""
 
-#: includes/options-config.php:376
+#: includes/options-config.php:392
 msgid "Sidebar Left"
 msgstr ""
 
-#: includes/options-config.php:377
+#: includes/options-config.php:393
 msgid "Sidebar Right"
 msgstr ""
 
-#: includes/options-config.php:378
+#: includes/options-config.php:394
 msgid "Full Width"
 msgstr ""
 
-#: includes/options-config.php:379
+#: includes/options-config.php:395
 msgid "No Sidebar"
 msgstr ""
 
-#: includes/options-config.php:387
+#: includes/options-config.php:403
 msgid "Header"
 msgstr ""
 
-#: includes/options-config.php:388
+#: includes/options-config.php:404
 msgid "Header options"
 msgstr ""
 
-#: includes/options-config.php:392
+#: includes/options-config.php:408
 msgid "Logo as Title"
 msgstr ""
 
-#: includes/options-config.php:398
+#: includes/options-config.php:414
 msgid "Show site Tagline"
 msgstr ""
 
-#: includes/options-config.php:405
+#: includes/options-config.php:421
 msgid "Footer"
 msgstr ""
 
-#: includes/options-config.php:406
+#: includes/options-config.php:422
 msgid "Footer related options"
 msgstr ""
 
-#: includes/options-config.php:410
+#: includes/options-config.php:426
 msgid "Footer Widget Area"
 msgstr ""
 
-#: includes/options-config.php:416
+#: includes/options-config.php:432
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:417
+#: includes/options-config.php:433
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:423
+#: includes/options-config.php:439
 msgid "Home"
 msgstr ""
 
-#: includes/options-config.php:424
+#: includes/options-config.php:440
 msgid "Home Page options"
 msgstr ""
 
-#: includes/options-config.php:428
+#: includes/options-config.php:444
 msgid "Enable Home Page Slider Section"
 msgstr ""
 
-#: includes/options-config.php:434
+#: includes/options-config.php:450
 msgid "Slider Posts Category"
 msgstr ""
 
-#: includes/options-config.php:439
+#: includes/options-config.php:455
 msgid "No. of Sliders"
 msgstr ""
 
-#: includes/options-config.php:445
+#: includes/options-config.php:461
 msgid "Enable Home Page Service Section"
 msgstr ""
 
-#: includes/options-config.php:451
+#: includes/options-config.php:467
 msgid "Choose Service Section Icons #1"
 msgstr ""
 
-#: includes/options-config.php:456
+#: includes/options-config.php:472
 msgid "Service Section #1"
 msgstr ""
 
-#: includes/options-config.php:461
+#: includes/options-config.php:477
 msgid "Choose Service Section Icons #2"
 msgstr ""
 
-#: includes/options-config.php:466
+#: includes/options-config.php:482
 msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:471
+#: includes/options-config.php:487
 msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:476
+#: includes/options-config.php:492
 msgid "Service Section #3"
 msgstr ""
 
-#: includes/options-config.php:481
+#: includes/options-config.php:497
 msgid "Choose Service Section Icons #4"
 msgstr ""
 
-#: includes/options-config.php:486
+#: includes/options-config.php:502
 msgid "Service Section #4"
 msgstr ""
 
-#: includes/options-config.php:491
+#: includes/options-config.php:507
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:492
+#: includes/options-config.php:508
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:498
+#: includes/options-config.php:514
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:504
+#: includes/options-config.php:520
 msgid "Enable Home Page Default Content"
 msgstr ""
 
-#: includes/options-config.php:505
+#: includes/options-config.php:521
 msgid "Enable home page default content"
 msgstr ""
 
-#: includes/options-config.php:512
+#: includes/options-config.php:528
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:513
+#: includes/options-config.php:529
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:517
+#: includes/options-config.php:533
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:523
+#: includes/options-config.php:539
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:525, includes/options-config.php:541
+#: includes/options-config.php:541, includes/options-config.php:557
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:526, includes/options-config.php:542
+#: includes/options-config.php:542, includes/options-config.php:558
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:533
+#: includes/options-config.php:549
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:539
+#: includes/options-config.php:555
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:565
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:550
+#: includes/options-config.php:566
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: includes/options-config.php:556
+#: includes/options-config.php:572
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:557
+#: includes/options-config.php:573
 msgid "Show related posts."
 msgstr ""
 
-#: includes/options-config.php:563
+#: includes/options-config.php:579
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:565
+#: includes/options-config.php:581
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:566
+#: includes/options-config.php:582
 msgid "Related Posts By Categories"
-msgstr ""
-
-#: includes/options-config.php:573
-msgid " Show Comments"
-msgstr ""
-
-#: includes/options-config.php:574
-msgid "Show Comments"
 msgstr ""
 
 #: includes/template-tags.php:25
@@ -749,48 +1163,48 @@ msgstr ""
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:325
+#: includes/template-tags.php:315
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:346
+#: includes/template-tags.php:336
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:356, template-parts/content-page.php:29
+#: includes/template-tags.php:346, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:403, includes/template-tags.php:406
+#: includes/template-tags.php:393, includes/template-tags.php:396
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:426
+#: includes/template-tags.php:416
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:428
+#: includes/template-tags.php:418
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:430
+#: includes/template-tags.php:420
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:434
+#: includes/template-tags.php:424
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:462
+#: includes/template-tags.php:452
 msgid "ReadMore"
 msgstr ""
 
-#: includes/template-tags.php:498
+#: includes/template-tags.php:488
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:499
+#: includes/template-tags.php:489
 msgid "Get started with Frolic"
 msgstr ""
 

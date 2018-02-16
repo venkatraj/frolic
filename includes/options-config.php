@@ -159,7 +159,7 @@ function frolic_display_upgrade() {
         $tab = null;
     } 
      
-    $pro_theme_url = 'http://genexthemes.com/downloads/frolic-pro/';
+    $pro_theme_url = 'https://genexthemes.com/downloads/frolic-pro/';
     $doc_url  = 'https://genexthemes.com/docs/free/frolic/';
     $support_url = 'https://genexthemes.com/free-support-request/';   
     
@@ -172,6 +172,7 @@ function frolic_display_upgrade() {
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=frolic_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php echo $theme_data->Name; ?></a>
+	        <a href="?page=frolic_upgrade&tab=one_click_demo" class="nav-tab<?php echo $tab == 'one_click_demo' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Import Demo Data', 'frolic' );  ?></a>
 	        <a href="?page=frolic_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Features', 'frolic' );  ?></a>
             <a href="?page=frolic_upgrade&tab=free_vs_pro" class="nav-tab<?php echo $tab == 'free_vs_pro' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Free VS PRO', 'frolic' ); ?></a>
 	        <?php do_action( 'frolic_admin_more_tabs' ); ?>
@@ -205,14 +206,29 @@ function frolic_display_upgrade() {
                         </div> 
                        
                     </div>  
-
                     <div class="theme_info_right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+                        <?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/screenshot.png" alt="%1$s" />',__('Theme screenshot','frolic') ); ?>
                     </div>
-                </div>
+                </div> 
             </div>
         <?php } ?>
-
+		<?php if ( $tab == 'one_click_demo' ) { ?>
+            <div class="one-click-demo-tab info-tab-content">
+				<div class="wrap clearfix">
+					<?php
+					if( ! function_exists('is_plugin_activate') ) {
+						include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+					}
+					if ( frolic_is_plugin_installed('One Click Demo Import') != 1 ) {
+						echo sprintf('%1$s <a href="%2$s"> %3$s</a>', __('Install required plugin to import the demo content.','frolic'), admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=install'), __('Begin Installing Plugin','frolic') );
+					} elseif ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {	
+						echo sprintf('<a href="%1$s"> %2$s</a>',  admin_url('themes.php?page=pt-one-click-demo-import'), __('Click here to install the demo','frolic') );
+				    } else {
+				    	echo sprintf('%1$s <a href="%2$s"> %3$s</a>', __('Kindly activate the Required plugin to Import the demo content.','frolic'), admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=activate'), __('Begin Activating Plugin','frolic') );
+				    } ?>
+				</div>
+			</div><?php   
+		} ?> 
         <?php if ( $tab == 'pro_features' ) { ?>
             <div class="pro-features-tab info-tab-content"><?php
 			    global $frolic_why_upgrade; ?>
@@ -379,7 +395,7 @@ function frolic_display_upgrade() {
                                     'no-sidebar' => __('No Sidebar', 'frolic'),
                                 ),
                                 'default' => 'right',  
-                                'sanitize_callback' => 'sanitize_text_field', 
+                                'sanitize_callback' => 'frolic_sanitize_radio', 
                             ),
 						),
 					),
@@ -568,13 +584,6 @@ function frolic_display_upgrade() {
                                'default' => '1', 
                                'sanitize_callback' => 'absint',    
                             ),
-                            'comments' => array(
-                                'type' => 'checkbox',
-                                'label' => __(' Show Comments', 'frolic'),
-                                'description' => __('Show Comments', 'frolic'),
-                                'default' => 1,  
-                                'sanitize_callback' => 'frolic_boolean',
-                            ),
 						),
 					),
 
@@ -590,6 +599,17 @@ function frolic_boolean($value) {
 	} else {
 		return false;
 	}
+}
+function frolic_sanitize_radio( $value, $setting ) {
+
+  // Ensure input is a slug.
+  $input = sanitize_key( $value );
+
+  // Get list of choices from the control associated with the setting.
+  $choices = $setting->manager->get_control( $setting->id )->choices;
+
+  // If the input is a valid key, return it; otherwise, return the default.
+  return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 }
 
 function frolic_breadcrumb_char_choices($value='') {

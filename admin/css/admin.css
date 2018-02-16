@@ -230,4 +230,10 @@ a[href="themes.php?page=frolic_upgrade"] {
     font-size: 50px;
     color: #03a9f4; }
 
+
+/* One click demo plugin code */
+
+.ocdi__intro-notice.notice.notice-warning.is-dismissible {
+  display: none !important;
+}   
 /*# sourceMappingURL=admin.css.map */
