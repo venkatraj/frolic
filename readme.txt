@@ -2,8 +2,8 @@
 Contributors: Genex
 Tags: e-commerce, blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.9.2
-Stable tag: 1.0.3
+Tested up to: 4.9.4
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,10 @@ Select 'Blog' section
 Enable/Disable featured images visibility.
 
 == Changelog ==
+
+= 1.0.4 =
+* Header image issue fixed. 
+
 = 1.0.3 =
 * Demo Import added. 
 
@@ -53,8 +57,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.3 =
-* Demo Import added. 
+= 1.0.4 =
+* Header image issue fixed. 
 
 Frolic WordPress Theme bundles the following third-party resources:
 == Resources ==

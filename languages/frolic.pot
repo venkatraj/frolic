@@ -554,11 +554,11 @@ msgstr ""
 msgid "Inline picker"
 msgstr ""
 
-#: includes/custom-header.php:83
+#: includes/custom-header.php:79
 msgid "Play background video"
 msgstr ""
 
-#: includes/custom-header.php:84
+#: includes/custom-header.php:80
 msgid "Pause background video"
 msgstr ""
 

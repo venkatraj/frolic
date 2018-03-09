@@ -35,12 +35,8 @@ function frolic_header_style() {
 	if ( get_header_image() ) {
 	?>
 	<style type="text/css">    
-		.header-image {
-			background-image: url(<?php echo esc_url(get_header_image()); ?>);
-			display: block;
-		} 
 		.custom-header-media img {
-				display: none;
+				display: block;
 		}      
 	</style>
 	<?php
