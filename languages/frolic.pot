@@ -1024,70 +1024,78 @@ msgid "No. of Recent Posts"
 msgstr ""
 
 #: includes/options-config.php:520
-msgid "Enable Home Page Default Content"
+msgid "Exclude the Posts from Home Page.Post IDs, separated by commas"
 msgstr ""
 
 #: includes/options-config.php:521
+msgid "Post IDs, separated by commas."
+msgstr ""
+
+#: includes/options-config.php:526
+msgid "Enable Home Page Default Content"
+msgstr ""
+
+#: includes/options-config.php:527
 msgid "Enable home page default content"
 msgstr ""
 
-#: includes/options-config.php:528
+#: includes/options-config.php:534
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:529
+#: includes/options-config.php:535
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:533
+#: includes/options-config.php:539
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:539
+#: includes/options-config.php:545
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:541, includes/options-config.php:557
+#: includes/options-config.php:547, includes/options-config.php:563
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:542, includes/options-config.php:558
+#: includes/options-config.php:548, includes/options-config.php:564
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:549
+#: includes/options-config.php:555
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:555
+#: includes/options-config.php:561
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:565
+#: includes/options-config.php:571
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:566
+#: includes/options-config.php:572
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: includes/options-config.php:572
+#: includes/options-config.php:578
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:573
+#: includes/options-config.php:579
 msgid "Show related posts."
 msgstr ""
 
-#: includes/options-config.php:579
+#: includes/options-config.php:585
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:581
+#: includes/options-config.php:587
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:582
+#: includes/options-config.php:588
 msgid "Related Posts By Categories"
 msgstr ""
 
@@ -1119,92 +1127,92 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: includes/template-tags.php:154
+#: includes/template-tags.php:156
 msgid "Blog Updates"
 msgstr ""
 
-#: includes/template-tags.php:195
+#: includes/template-tags.php:197
 msgid "<i class=\"fa fa-home\"></i>"
 msgstr ""
 
-#: includes/template-tags.php:196
+#: includes/template-tags.php:198
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:197
+#: includes/template-tags.php:199
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:198
+#: includes/template-tags.php:200
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:199
+#: includes/template-tags.php:201
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:200
+#: includes/template-tags.php:202
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:253, includes/template-tags.php:253, includes/template-tags.php:254, includes/template-tags.php:258, includes/template-tags.php:258, includes/template-tags.php:262
+#: includes/template-tags.php:255, includes/template-tags.php:255, includes/template-tags.php:256, includes/template-tags.php:260, includes/template-tags.php:260, includes/template-tags.php:264
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:254
+#: includes/template-tags.php:256
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:254, includes/template-tags.php:259
+#: includes/template-tags.php:256, includes/template-tags.php:261
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:255
+#: includes/template-tags.php:257
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:315
+#: includes/template-tags.php:317
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:336
+#: includes/template-tags.php:338
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:346, template-parts/content-page.php:29
+#: includes/template-tags.php:348, template-parts/content-page.php:29
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:393, includes/template-tags.php:396
+#: includes/template-tags.php:395, includes/template-tags.php:398
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:416
+#: includes/template-tags.php:418
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:418
+#: includes/template-tags.php:420
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:420
+#: includes/template-tags.php:422
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:424
+#: includes/template-tags.php:426
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:452
+#: includes/template-tags.php:454
 msgid "ReadMore"
 msgstr ""
 
-#: includes/template-tags.php:488
+#: includes/template-tags.php:490
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:489
+#: includes/template-tags.php:491
 msgid "Get started with Frolic"
 msgstr ""
 

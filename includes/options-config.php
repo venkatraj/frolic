@@ -273,7 +273,7 @@ function frolic_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'frolic'); ?></h3></td>
-		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -515,6 +515,12 @@ function frolic_display_upgrade() {
 								'sanitize_callback' => 'absint',
 								'default' => 4,  
 							), 
+							'recent_posts_exclude' => array(
+								'type' => 'text',
+								'label' => __('Exclude the Posts from Home Page.Post IDs, separated by commas', 'frolic'),
+								'description' => __('Post IDs, separated by commas.','frolic'),
+								'sanitize_callback' => 'sanitize_text_field', 
+							),
 							'enable_home_default_content' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Home Page Default Content', 'frolic'),
