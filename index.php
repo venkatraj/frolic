@@ -42,7 +42,10 @@ get_header(); ?>
 			    if(  get_theme_mod ('numeric_pagination',true) ) : 
 					the_posts_pagination();
 				else :
-					frolic_post_nav();    
+					the_posts_navigation( array(
+					    'prev_text' => __(' &larr; Previous Post','frolic'),
+					    'next_text' => __('Next Post &rarr;','frolic'),
+					) );    
 				endif; 
 			?>
 

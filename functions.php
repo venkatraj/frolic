@@ -375,6 +375,11 @@ if( !function_exists('frolic_register_plugins') ) {
 				'slug'     => 'one-click-demo-import', // The plugin slug (typically the folder name).
 				'required' => false, // If false, the plugin is only 'recommended' instead of required.
 			),
+			array(
+				'name'               => 'WPForms Lite', // The plugin name.
+				'slug'               => 'wpforms-lite', // The plugin slug (typically the folder name).
+				'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			),
 		);
 		/*
 		 * Array of configuration settings. Amend each line as needed.
@@ -406,17 +411,6 @@ if( !function_exists('frolic_register_plugins') ) {
 			// Automatically activate plugins after installation or not.
 			'message'      => '',
 			// Message to output right before the plugins table.
-			'strings'      => array(
-				'notice_can_activate_recommended' => _n_noop(
-					/* translators: 1: plugin name(s). */
-					'Activate the following plugin to import demo content of this theme: %1$s.','frolic'
-				),
-				'notice_can_install_recommended'  => _n_noop(
-					/* translators: 1: plugin name(s). */
-					'To Make your site look like Theme ScreenShot, Install this Plugin: %1$s. Then Go to Dashboard > Appearance > Import Demo Data.',
-					'frolic'
-				),
-			),
 		);
 
 		tgmpa( $plugins, $config );
