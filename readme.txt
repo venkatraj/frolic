@@ -2,8 +2,8 @@
 Contributors: Genex
 Tags: e-commerce, blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options, rtl-language-support
 Requires at least: 4.0
-Tested up to: 4.9.6
-Stable tag: 1.0.6
+Tested up to: 4.9.8
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,6 +46,9 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.0.7 = 
+* Gutenberg unit test style added. 
+
 = 1.0.6 = 
 * WPForms Lite plugin recommended. 
 * Scroll to Top option added.
@@ -66,10 +69,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.6 = 
-* WPForms Lite plugin recommended. 
-* Scroll to Top option added.
-* Social Sharing Box option added in Single post.
+= 1.0.7 = 
+* Gutenberg unit test style added. 
 
 Frolic WordPress Theme bundles the following third-party resources:
 == Resources ==

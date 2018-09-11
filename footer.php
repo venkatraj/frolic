@@ -26,9 +26,7 @@
 				<?php if( get_theme_mod('copyright') ) : ?>
 							<p><?php echo frolic_footer_copyright(get_theme_mod('copyright')); ?></p>
 						<?php else : 
-								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'frolic'), esc_url( 'http://wordpress.org/') );
-								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Frolic by <a href="%1$s" target="_blank" rel="designer">Genex Themes</a></p>', 'frolic' ), esc_url('http://www.genexthemes.com/') );
+							echo sprintf( '<p> %1$s <a href="%2$s" target="_blank"> %3$s</a> %4$s <a href="%5$s" target="_blank" rel="designer">%6$s</a></p>', __('Powered by','frolic'), esc_url( 'http://wordpress.org/'), __('WordPress.','frolic'), __('Theme: Frolic by','frolic'), esc_url('https://www.genexthemes.com/'), __('Genex Themes','frolic')) ;
 					 endif;  ?>
 				</div>
 			</div>
